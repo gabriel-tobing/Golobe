@@ -1,0 +1,560 @@
+@import url(style.css);
+
+/* Style Navbar Section */
+
+.navbar.scroll {
+    background-color: var(--white-color);
+}
+
+.navbar .nav-link {
+    color: var(--black-color) !important;
+}
+
+.navbar .login-button {
+    color: var(--black-color);
+}
+
+.navbar .register-button {
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+
+
+/* Style Breadcrumb Section */
+
+.breadcrumb {
+    margin-top: 6.188rem;
+    margin-bottom: 2rem;
+}
+
+.breadcrumb .breadcrumb-item.active span {
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-medium);
+    opacity: 0.75;
+}
+
+.breadcrumb .breadcrumb-item a {
+    color: var(--secondary-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-medium);
+}
+
+
+
+/* Style Booking Section */
+
+.booking {
+    margin-bottom: 16.938rem;
+}
+
+.booking .return-card {
+    margin-bottom: 2.5rem;
+    padding: 2rem 1.5rem;
+    background-color: var(--white-color);
+    box-shadow: 0 4px 16px rgba(17, 34, 17, 0.05);
+    border-radius: 0.75rem;
+}
+
+.booking .card-group:not(:last-child) {
+    margin-bottom: 2.5rem;
+}
+
+.booking .return-card .return-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.booking .return-card .return-info .name {
+    width: 50%;
+    margin-bottom: 0;
+    color: var(--black-color);
+    font-family: var(--font-trade-gothic);
+    font-size: 1.5rem;
+    font-weight: var(--fw-bold);
+}
+
+.booking .return-card .return-info .price {
+    color: var(--secondary-color);
+    font-family: var(--font-poppins);
+    font-size: 2rem;
+    font-weight: var(--fw-bold);
+}
+
+.booking .return-card .return-info .price span {
+    font-size: 0.875rem;
+}
+
+.booking .return-card .guarantee {
+    margin-bottom: 2.5rem;
+}
+
+.booking .return-card .guarantee .flight .hotel-image {
+    margin-right: 1.5rem;
+}
+
+.booking .return-card .guarantee .guarantee-content {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    border: 0.5px solid var(--primary-color);
+    border-radius: 0.5rem;
+}
+
+.booking .return-card .guarantee .guarantee-content .name {
+    margin-bottom: 0.5rem;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 1.5rem;
+    font-weight: var(--fw-semibold);
+}
+
+.booking .return-card .guarantee .guarantee-content .location-container .button-icon {
+    width: 1rem;
+    height: 1rem;
+    color: var(--black-color);
+}
+
+.booking .return-card .guarantee .guarantee-content .location-container .location {
+    margin-left: 0.5rem;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-medium);
+    opacity: 0.75;
+}
+
+.booking .return-card .flight-date .plane {
+    gap: 5rem;
+}
+
+.booking .return-card .flight-date .plane .circle {
+    position: relative;
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: var(--black-color);
+    border-radius: 50%;
+}
+
+.booking .return-card .flight-date .plane .circle {
+    position: relative;
+    width: 0.4rem;
+    height: 0.4rem;
+    background-color: var(--black-color);
+    border-radius: 50%;
+}
+
+.booking .return-card .flight-date .plane .circle.right .line {
+    position: absolute;
+    top: 0.15rem;
+    left: 0;
+    width: 3.5rem;
+    height: 0.1rem;
+    background-color: var(--black-color);
+    border-radius: 0.25rem;
+}
+
+.booking .return-card .flight-date .plane .circle.left .line {
+    position: absolute;
+    top: 0.15rem;
+    right: 0;
+    width: 3.5rem;
+    height: 0.1rem;
+    background-color: var(--black-color);
+    border-radius: 0.25rem;
+}
+
+.booking .return-card .flight-date .plane .button-icon {
+    width: 3rem;
+    height: 3rem;
+    color: var(--black-color);
+}
+
+.booking .return-card .flight-date .date {
+    margin-bottom: 0.5rem;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 1.25rem;
+    font-weight: var(--fw-semibold);
+}
+
+.booking .return-card .flight-date .type {
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-medium);
+    opacity: 0.6;
+}
+
+.booking .total-card {
+    padding: 1.5rem;
+    background-color: var(--white-color);
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 16px rgba(17, 34, 17, 0.05);
+}
+
+.booking .total-card .total-content {
+    display: flex;
+}
+
+.booking .total-card .image-container {
+    margin-right: 1.5rem;
+}
+
+.booking .total-card .type {
+    width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 0.25rem;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 1rem;
+    font-weight: var(--fw-medium);
+    opacity: 0.75;
+}
+
+.booking .total-card .name {
+    margin-bottom: 1.25rem;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 1.25rem;
+    font-weight: var(--fw-semibold);
+}
+
+.booking .total-card .rating {
+    margin-right: 0.5rem;
+    padding: 0.3rem 0.5rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 0.25rem;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.75rem;
+    font-weight: var(--fw-medium);
+}
+
+.booking .total-card .review {
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.75rem;
+    font-weight: var(--fw-medium);
+}
+
+.booking .total-card .review span {
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.75rem;
+    font-weight: var(--fw-bold);
+}
+
+.booking .total-card .divider {
+    width: 100%;
+    height: 0.031rem;
+    background-color: var(--black-color);
+    margin: 1rem 0;
+    opacity: 0.25;
+}
+
+.booking .total-card .info {
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 1rem;
+    font-weight: var(--fw-medium);
+}
+
+.booking .total-card .info span {
+    font-weight: var(--fw-bold);
+}
+
+.booking .total-card .details .subtitle {
+    margin-bottom: 1rem;
+    color: var(--black-color);
+    font-family: var(--font-trade-gothic);
+    font-size: 1rem;
+    font-weight: var(--fw-bold);
+}
+
+.booking .total-card .details .price-list:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.booking .total-card .details .price-list .type,
+.booking .total-card .details .total-list .type {
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 1rem;
+    font-weight: var(--fw-medium);
+    opacity: 1;
+}
+
+.booking .total-card .details .price-list .price,
+.booking .total-card .details .total-list .price {
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 1rem;
+    font-weight: var(--fw-semibold);
+}
+
+.booking .total-card .details .divider {
+    width: 100%;
+    height: 0.031rem;
+    background-color: var(--black-color);
+    margin: 1rem 0;
+    opacity: 0.25;
+}
+
+.booking .pay-list {
+    margin-bottom: 2.5rem;
+    padding: 1rem;
+    background-color: var(--white-color);
+    box-shadow: 0 4px 16px rgba(17, 34, 17, 0.05);
+    border-radius: 0.75rem;
+}
+
+.booking .pay-list .pay-content .title {
+    margin-bottom: 0.5rem;
+    color: var(--black-color);
+    font-family: var(--font-trade-gothic);
+    font-size: 1rem;
+    font-weight: var(--fw-bold);
+}
+
+.booking .pay-list .pay-content .desc {
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-regular);
+}
+
+.booking .pay-list .radio:nth-child(2) .pay-content .desc {
+    display: inline-block;
+    padding-right: 6rem;
+}
+
+.booking .pay-list .radio {
+    cursor: pointer;
+}
+
+.booking .pay-list label.radio .pay-check {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    pointer-events: none
+}
+
+.booking .pay-list label.radio .pay-content {
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.booking .pay-list label.radio input:checked + .pay-content {
+    background-color: var(--primary-color);
+}
+
+.booking .pay-list .more-button {
+    padding: 1rem;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.75rem;
+    font-weight: var(--fw-medium);
+    text-decoration: underline;
+}
+
+.booking .payment-card {
+    padding: 1.5rem;
+    box-shadow: 0 4px 16px rgba(17, 34, 17, 0.05);
+    border-radius: 0.75rem;
+}
+
+.booking .payment-card .title {
+    margin-bottom: 1rem;
+    color: var(--black-color);
+    font-family: var(--font-trade-gothic);
+    font-size: 1.25rem;
+    font-weight: var(--fw-bold);
+}
+
+.booking .payment-card input {
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #79747E;
+    border-radius: 0.25rem;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 1rem;
+    font-weight: var(--fw-regular);
+}
+
+.booking .payment-card input[type="number"]::placeholder {
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 1rem;
+    font-weight: var(--fw-regular);
+}
+
+.booking .payment-card .info {
+    margin-bottom: 1rem;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-regular);
+}
+
+.booking .payment-card .submit-button {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    border-radius: 0.25rem;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 1rem;
+    font-weight: var(--fw-medium);
+}
+
+.booking .payment-card .row-divider {
+    position: relative;
+    margin: 1.5rem 0;
+}
+
+.booking .payment-card .row-divider .divider {
+    position: relative;
+    width: 100%;
+    height: 0.1rem;
+    background-color: var(--black-color);
+    opacity: 0.25;
+}
+
+.booking .payment-card .row-divider .text {
+    position: absolute;
+    top: -0.7rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5rem;
+    padding: 0 1rem;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 1rem;
+    font-weight: var(--fw-medium);
+    text-align: center;
+}
+
+.booking .payment-card .account .user-button {
+    height: max-content;
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    background-color: var(--white-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 0.25rem;
+    text-align: center;
+}
+
+.booking .payment-card .email button {
+    width: 100%;
+    height: max-content;
+    display: block;
+    padding: 1rem 1.5rem;
+    background-color: var(--white-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 0.25rem;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.booking .payment-card .email button .button-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: var(--black-color);
+}
+
+.booking .payment-card .email button span {
+    display: inline-block;
+    margin-left: 1rem;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 1rem;
+    font-weight: var(--fw-medium);
+}
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 450px) {
+    .booking .return-card {
+        padding: 0.5rem 1rem;
+        overflow-x: scroll;
+        white-space: nowrap
+    }
+
+    .booking .return-card .return-info {
+        width: 35rem;
+        flex-wrap: wrap;
+    }
+
+    .booking .return-card .return-info .name {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .booking .return-card .return-info .price {
+        margin-left: auto;
+    }
+
+    .booking .return-card .guarantee {
+        width: 35rem;
+    }
+
+    .booking .return-card .guarantee .guarantee-content {
+        flex-wrap: wrap;
+    }
+
+    .booking .return-card .guarantee .guarantee-content {
+        padding: 0.5rem 1rem;
+    }
+
+    .booking .return-card .guarantee .flight {
+        margin-inline: auto;
+        margin-bottom: 1rem;
+    }
+
+    .booking .return-card .guarantee .guarantee-content .name {
+        font-size: 1.2rem;
+    }
+
+    .booking .return-card .flight-date {
+        gap: 5rem;
+    }
+
+    .booking .payment-card .row-divider .text {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .booking .pay-list .radio:nth-child(2) .desc {
+        width: 13rem;
+        padding-right: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .booking .total-card .total-content {
+        flex-wrap: wrap;
+    }
+
+    .booking .total-card .image-container {
+        margin-bottom: 1rem;
+        margin-right: 0;
+    }
+}

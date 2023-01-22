@@ -1,0 +1,509 @@
+@import url(style.css);
+
+/* Style Hero Section */
+
+.hero {
+    position: relative;
+    height: 65vh;
+    background-image: url(../../images/static/Home/Hero-image.png);
+    background-size: cover;
+    background-position: 0 -8rem;
+    background-repeat: no-repeat;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--black-color);
+    opacity: 0.6;
+}
+
+.hero .hero-content {
+    position: relative;
+    z-index: 3;
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero .hero-content .subtitle {
+    color: var(--white-color);
+    font-family: var(--font-trade-gothic);
+    font-size: 2.813rem;
+    font-weight: var(--fw-bold);
+}
+
+.hero .hero-content .title {
+    color: var(--white-color);
+    font-family: var(--font-trade-gothic);
+    font-size: 5rem;
+    font-weight: var(--fw-bold);
+}
+
+.hero .hero-content .desc {
+    color: var(--white-color);
+    font-family: var(--font-trade-gothic);
+    font-size: 1.25rem;
+    font-weight: var(--fw-semibold);
+}
+
+.search {
+    margin-top: -4rem;
+}
+
+.search .card {
+    padding: 1rem 2rem 2rem 2rem;
+    background-color: var(--white-color);
+    box-shadow: 0 0.25rem 1rem rgba(141, 211, 187, 0.15);
+    font-family: var(--font-poppins);
+}
+
+.search .card .type-button {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 0.6rem 0.75rem 0;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 1rem;
+    font-weight: var(--fw-semibold);
+}
+
+.search .card .type-button .card-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: var(--black-color);
+}
+
+.search .card .type-button span:nth-child(2) {
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+
+.search .card .divider {
+    width: 48px;
+    height: 100%;
+    margin: 2rem;
+    border: 1px solid #D7E2EE;
+    transform: rotate(90deg);
+}
+
+.search .card .type-button.active {
+    border-bottom: 4px solid var(--primary-color);
+}
+
+.search .card .search-form {
+    margin-top: 2rem;
+}
+
+.search .card .search-form#hotel-search {
+    display: none;
+}
+
+.search .card .search-form .form-buttons {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    gap: 1.5rem;
+}
+
+.search .card .search-form .search-container {
+    margin-bottom: 2rem;
+    gap: 1.5rem;
+}
+
+.search .card form .form-content {
+    position: relative;
+}
+
+.search .card .form-content .form-label {
+    position: absolute;
+    top: -0.6rem;
+    left: 0.8rem;
+    padding: 0 0.25rem;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-regular);
+    z-index: 3;
+}
+
+.search .card .form-content .form-control {
+    padding: 0.8rem 2.3rem 0.8rem 1rem;
+    border: 2px solid var(--black-color);
+    background-color: var(--white-color);
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-weight: var(--fw-regular);
+}
+
+.search .card .form-content .form-control:focus .form-label {
+    color: var(--primary-color);
+}
+
+.search .card form .swap,
+.search .card form .chevron {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 0.25rem 0.25rem 0;
+}
+
+.search .card form .form-control.trip {
+    width: 8rem;
+    padding-right: 3rem;
+}
+
+.search .card form .promo-button {
+    display: inline-block;
+    padding: 0.5rem 0;
+}
+
+.search .card form .submit-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    border-radius: 0.25rem;
+}
+
+.search .card form .promo-button .button-icon,
+.search .card form .submit-button .button-icon {
+    width: 1rem;
+    height: 1rem;
+    color: var(--black-color);
+}
+
+.search .card form .promo-button span,
+.search .card form .submit-button span {
+    display: inline-block;
+    margin-left: 0.313rem;
+    color: var(--black-color);
+    font-size: 0.875rem;
+    font-weight: var(--fw-medium);
+}
+
+
+
+/* Style Plan Section */
+
+.plan {
+    padding: 5rem 1rem 1rem 1rem;
+}
+
+.plan .title {
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 2rem;
+    font-weight: var(--fw-semibold);
+}
+
+.plan .desc {
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-weight: var(--fw-regular);
+}
+
+.plan .trip-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 0.25rem;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-medium);
+}
+
+.plan .plan-card {
+    margin-top: 2.5rem;
+}
+
+.plan .trip-card {
+    padding: 1rem;
+    background-color: var(--white-color);
+    border-radius: 1rem;
+    box-shadow: 0 0.25rem 1rem rgba(17, 34, 17, 0.05);
+}
+
+.plan .trip-card .card-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.plan .country {
+    margin-bottom: 0.5rem;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-weight: var(--fw-semibold);
+    opacity: 0.7;
+}
+
+.plan .type {
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-medium);
+}
+
+.plan .type span:not(:last-child)::after {
+    content: "•";
+    margin: 0 0.5rem;
+}
+
+
+
+/* Style Services Section */
+
+.services {
+    padding-top: 4rem;
+}
+
+.services .flights {
+    height: 34.938rem;
+    background-image: url(../../images/static/Home/Flights.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+    filter: drop-shadow(0 4px 16px rgba(17, 34, 17, 0.05));
+}
+
+.services .flights .title,
+.services .hotels .title {
+    margin-bottom: 0.5rem;
+    color: var(--white-color);
+    font-family: var(--font-trade-gothic);
+    font-size: 2.5rem;
+    font-weight: var(--fw-bold);
+}
+
+.services .flights .desc,
+.services .hotels .desc {
+    margin-bottom: 1rem;
+    color: var(--white-color);
+    font-family: var(--font-poppins);
+    font-weight: var(--fw-regular);
+}
+
+.services .flights .submit-button,
+.services .hotels .submit-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    border-radius: 0.25rem;
+}
+
+.services .flights .submit-button .button-icon,
+.services .hotels .submit-button .button-icon {
+    width: 1rem;
+    height: 1rem;
+    color: var(--black-color);
+}
+
+.services .flights .submit-button span,
+.services .hotels .submit-button span {
+    display: inline-block;
+    margin-left: 0.25rem;
+    color: var(--black-color);
+    font-size: 0.875rem;
+    font-weight: var(--fw-medium);
+}
+
+.services .hotels {
+    height: 34.938rem;
+    background-image: url(../../images/static/Home/Hotels.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+    filter: drop-shadow(0 4px 16px rgba(17, 34, 17, 0.05));
+}
+
+
+
+/* Style Reviews Section */
+
+.reviews {
+    padding-top: 4.375rem;
+    margin-bottom: 15.063rem;
+}
+
+.reviews .reviews-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reviews .title {
+    margin-bottom: 1rem;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 2rem;
+    font-weight: var(--fw-semibold);
+}
+
+.reviews .desc {
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-weight: var(--fw-regular);
+}
+
+.reviews .more-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 0.25rem;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-medium);
+}
+
+.reviews .reviews-swiper {
+    padding: 2.5rem 0;
+}
+
+.reviews .reviews-swiper .reviews-card {
+    position: relative;
+    padding: 1.5rem;
+    background-color: var(--white-color);
+    border-radius: 1.25rem;
+    box-shadow: 0.125rem 0.25rem 1rem rgba(17, 34, 17, 0.1) !important;
+}
+
+.reviews .reviews-swiper .reviews-card .title {
+    color: var(--black-color);
+    font-family: var(--font-trade-gothic);
+    font-size: 1.5rem;
+    font-weight: var(--fw-bold);
+}
+
+.reviews .reviews-swiper .reviews-card .desc {
+    margin-bottom: 0.75rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-medium);
+}
+
+.reviews .reviews-swiper .reviews-card .view-button {
+    display: block;
+    margin-left: auto;
+    margin-bottom: 1rem;
+    color: var(--black-color);
+    font-family: var(--font-trade-gothic);
+    font-size: 0.875rem;
+    font-weight: var(--fw-bold);
+}
+
+.reviews .reviews-swiper .reviews-card .rating {
+    margin-bottom: 1.25rem;
+}
+
+.reviews .reviews-swiper .reviews-card .name {
+    margin-bottom: 0.25rem;
+    color: var(--black-color);
+    font-family: var(--font-trade-gothic);
+    font-size: 0.875rem;
+    font-weight: var(--fw-bold);
+}
+
+.reviews .reviews-swiper .reviews-card .info {
+    margin-bottom: 0.75rem;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.75rem;
+    font-weight: var(--fw-medium);
+    opacity: 0.5;
+}
+
+.reviews .reviews-swiper .reviews-card .type {
+    color: var(--black-color);
+    font-family: var(--font-trade-gothic);
+    font-size: 0.75rem;
+    font-weight: var(--fw-bold);
+    opacity: 0.4;
+}
+
+.reviews .reviews-swiper .reviews-card .panoramic {
+    margin-top: 2.5rem;
+}
+
+.reviews .reviews-swiper .reviews-card .overlay {
+    position: absolute;
+    top: 1.375rem;
+    left: 1.625rem;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(141, 211, 187, 0.4);
+    border-radius: 1.25rem;
+}
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 450px) {
+    .hero {
+        height: 100%;
+    }
+
+    .hero .hero-content {
+        margin-top: 2rem;
+    }
+
+    .hero .hero-content .subtitle {
+        font-size: 1.5rem;
+    }
+    
+    .hero .hero-content .title {
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    .hero .hero-content .desc {
+        font-size: 1rem;
+    }
+
+    .search {
+        margin-top: -2rem;
+    }
+
+    .search .card .form-content .form-control {
+        width: 100% !important;
+    }
+
+    .search .card .search-form .form-buttons {
+        display: block;
+    }
+
+    .search .card .search-form .form-buttons .promo-button {
+        margin-bottom: 1rem;
+    }
+
+    .search .card .search-form .form-buttons .promo-button,
+    .search .card .search-form .form-buttons .submit-button {
+        width: 100%;
+        display: block;
+    }
+
+    .plan .trip-button {
+        margin-top: 1rem;
+    }
+
+    .plan .trip-card .card-content {
+        flex-wrap: wrap;
+    }
+
+    .reviews .reviews-content {
+        flex-wrap: wrap;
+    }
+}

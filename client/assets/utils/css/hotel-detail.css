@@ -1,0 +1,679 @@
+@import url(style.css);
+
+/* Style Navbar Section */
+
+.navbar.scroll {
+    background-color: var(--white-color);
+}
+
+.navbar .nav-link {
+    color: var(--black-color) !important;
+}
+
+.navbar .login-button {
+    color: var(--black-color);
+}
+
+.navbar .register-button {
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+
+
+/* Style Breadcrumb Section */
+
+.breadcrumb {
+    margin-top: 6.188rem;
+    margin-bottom: 2rem;
+}
+
+.breadcrumb .breadcrumb-item.active span {
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-medium);
+    opacity: 0.75;
+}
+
+.breadcrumb .breadcrumb-item a {
+    color: var(--secondary-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-medium);
+}
+
+
+
+/* Style Flight Detail Section */
+
+.flight-detail .flight-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flight-detail .plane {
+    margin-bottom: 1rem;
+    color: var(--black-color);
+    font-family: var(--font-trade-gothic);
+    font-size: 1.5rem;
+    font-weight: var(--fw-bold);
+}
+
+.flight-detail .location-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.flight-detail .location-container .button-icon {
+    width: 1rem;
+    height: 1rem;
+    color: var(--black-color);
+}
+
+.flight-detail .location {
+    margin-left: 0.5rem;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-medium);
+    opacity: 0.75;
+}
+
+.flight-detail .rating {
+    margin-right: 0.5rem;
+    padding: 0.531rem 0.688rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 0.25rem;
+}
+
+.flight-detail .review {
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.75rem;
+    font-weight: var(--fw-medium);
+}
+
+.flight-detail .review span {
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.75rem;
+    font-weight: var(--fw-bold);
+}
+
+.flight-detail .price {
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+    font-family: var(--font-poppins);
+    font-size: 2rem;
+    font-weight: var(--fw-bold);
+    text-align: end;
+}
+
+.flight-detail .detail-buttons {
+    gap: 0.938rem;
+}
+
+.flight-detail .favorite-button,
+.flight-detail .share-button,
+.flight-detail .submit-button {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 0.25rem;
+}
+
+.flight-detail .favorite-button .button-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--black-color);
+}
+
+.flight-detail .share-button .button-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--black-color);
+}
+
+.flight-detail .submit-button {
+    background-color: var(--primary-color);
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-semibold);
+}
+
+.flight-detail .plane-image {
+    margin-top: 2rem;
+}
+
+.flight-detail .detail-hotel {
+    margin-top: 2rem;
+}
+
+.divider {
+    width: 100%;
+    margin: 0 1.5rem;
+    border: 1px solid #D7E2EE;
+}
+
+.recomended {
+    height: 26.563rem;
+    background-image: url(../../images/static/Hotel/Hotel.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 1.25rem;
+}
+
+.hotel-detail {
+    border-radius: 0.75rem;
+}
+
+.panoramic {
+    height: 12.5rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 0.75rem;
+}
+
+.panoramic.one {
+    background-image: url(../../images/static/Hotel/Hotel-detail-1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.panoramic.two {
+    background-image: url(../../images/static/Hotel/Hotel-detail-2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.panoramic.three {
+    background-image: url(../../images/static/Hotel/Hotel-detail-3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.panoramic.four {
+    background-image: url(../../images/static/Hotel/Hotel-detail-4.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+/* Style Complete Info Section */
+
+.complete-info {
+    margin-top: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    border-top: 2px solid #D7E2EE;
+    border-bottom: 2px solid #D7E2EE;
+}
+
+.complete-info .title {
+    margin-bottom: 1rem;
+    color: var(--black-color);
+    font-family: var(--font-trade-gothic);
+    font-size: 1.25rem;
+    font-weight: var(--fw-bold);
+}
+
+.complete-info .desc {
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 1rem;
+    font-size: var(--fw-medium);
+    line-height: 1.25rem;
+    opacity: 0.75;
+}
+
+.complete-info .complete-info-inner {
+    margin-top: 2rem;
+}
+
+.complete-info .complete-info-inner .card-container {
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+    gap: 1rem;
+}
+
+.complete-info .complete-info-inner .card-container .info-card {
+    padding: 1rem 4rem 1rem 1rem;
+    background-color: var(--primary-color);
+    border-radius: 0.75rem;
+}
+
+.complete-info .complete-info-inner .card-container .info-card.secondary {
+    border: 1px solid var(--primary-color);
+    background-color: var(--white-color);
+}
+
+.complete-info .complete-info-inner .card-container .info-card .button-icon {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 2rem;
+}
+
+.complete-info .complete-info-inner .card-container .info-card .subtitle {
+    margin-bottom: 2rem;
+    color: var(--black-color);
+    font-family: var(--font-trade-gothic);
+    font-size: 2rem;
+    font-weight: var(--fw-bold);
+}
+
+.complete-info .complete-info-inner .card-container .info-card .review {
+    margin-bottom: 0.25rem;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 1rem;
+    font-weight: var(--fw-bold);
+}
+
+.complete-info .complete-info-inner .card-container .info-card .info {
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-medium);
+}
+
+
+
+/* Style Room Section */
+
+.rooms {
+    margin-top: 4rem;
+    padding-bottom: 4rem;
+    border-bottom: 2px solid #D7E2EE;
+}
+
+.rooms .rooms-content .title {
+    color: var(--black-color);
+    font-family: var(--font-trade-gothic);
+    font-size: 1.25rem;
+    font-weight: var(--fw-bold);
+}
+
+.rooms .rooms-content .rooms-container {
+    margin-top: 2rem;
+}
+
+.rooms .rooms-content .rooms-container .rooms-card {
+    padding: 1rem 0;
+}
+
+.rooms .rooms-content .rooms-container .rooms-card:not(:last-child) {
+    border-bottom: 0.5px solid rgba(17, 34, 17, 0.25);
+}
+
+.rooms .rooms-content .rooms-container .rooms-card .desc {
+    margin-left: 1rem;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 1rem;
+    font-weight: var(--fw-medium);
+}
+
+.rooms .rooms-content .rooms-container .rooms-card .right-info {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.rooms .rooms-content .rooms-container .rooms-card .right-info .price {
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 1.5rem;
+    font-weight: var(--fw-semibold);
+}
+
+.rooms .rooms-content .rooms-container .rooms-card .right-info .price span {
+    font-size: 0.875rem;
+}
+
+.rooms .rooms-content .rooms-container .rooms-card .right-info .book-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    border-radius: 0.25rem;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-semibold);
+}
+
+.rooms .rooms-content .rooms-container .rooms-card .rooms-content-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* Style Maps Section */
+
+.maps {
+    margin-top: 4rem;
+    padding-bottom: 4rem;
+    border-bottom: 2px solid #D7E2EE;
+}
+
+.maps .maps-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.maps .maps-content .title {
+    color: var(--black-color);
+    font-family: var(--font-trade-gothic);
+    font-size: 1.25rem;
+    font-weight: var(--fw-bold);
+}
+
+.maps .maps-content .view-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    border-radius: 0.25rem;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-semibold);
+}
+
+.maps .location-container {
+    display: flex;
+    align-items: center;
+}
+
+.maps .button-icon {
+    width: 1rem;
+    height: 1rem;
+    color: var(--black-color);
+}
+
+.maps .location {
+    margin-left: 0.336rem;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-medium);
+}
+
+
+
+/* Style Guarantee Section */
+
+.guarantee {
+    margin-top: 4rem;
+    padding-bottom: 4rem;
+    border-bottom: 2px solid #D7E2EE;
+}
+
+.guarantee .title {
+    color: var(--black-color);
+    font-family: var(--font-trade-gothic);
+    font-size: 1.25rem;
+    font-weight: var(--fw-bold);
+}
+
+.guarantee .guarantee-content {
+    margin-top: 2rem;
+}
+
+.guarantee .guarantee-content .guarantee-content-inner {
+    margin-bottom: 1.5rem;
+}
+
+.guarantee .guarantee-content .guarantee-content-inner .button-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: var(--black-color);
+}
+
+.guarantee .guarantee-content .guarantee-content-inner .info {
+    margin-left: 0.5rem;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 1rem;
+    font-weight: var(--fw-medium);
+}
+
+.guarantee .guarantee-content .guarantee-content-inner .over {
+    color: var(--secondary-color);
+    font-family: var(--font-poppins);
+    font-size: 1rem;
+    font-weight: var(--fw-semibold);
+}
+
+
+
+/* Style Guarantee Section */
+
+.reviews {
+    margin-top: 4rem;
+    margin-bottom: 16.938rem;
+    padding-bottom: 4rem;
+}
+
+.reviews .title {
+    color: var(--black-color);
+    font-family: var(--font-trade-gothic);
+    font-size: 1.25rem;
+    font-weight: var(--fw-bold);
+}
+
+.reviews .reviews-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    border-radius: 0.25rem;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-semibold);
+}
+
+.reviews .reviews-container {
+    margin-top: 1.5rem;
+}
+
+.reviews .reviews-container .reviews-info .title {
+    margin-right: 1rem;
+    color: var(--black-color);
+    font-family: var(--font-trade-gothic);
+    font-size: 3.125rem;
+    font-weight: var(--fw-bold);
+}
+
+.reviews .reviews-container .reviews-info .review {
+    margin-bottom: 0.5rem;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 1.25rem;
+    font-weight: var(--fw-semibold);
+}
+
+.reviews .reviews-container .reviews-info .desc {
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-regular);
+}
+
+.reviews .reviews-container .reviews-content {
+    margin-top: 1.5rem;
+}
+
+.reviews .reviews-container .reviews-content .reviews-content-inner {
+    padding: 1.5rem 0;
+    border-bottom: 0.5px solid rgba(17, 34, 17, 0.25);
+}
+
+.reviews .reviews-container .reviews-content .reviews-content-inner:first-child {
+    border-top: 0.5px solid rgba(17, 34, 17, 0.25);
+    border-bottom: 0.5px solid rgba(17, 34, 17, 0.25);
+}
+
+.reviews .reviews-container .reviews-content .reviews-content-inner .reviews-card .reviews-detail {
+    display: flex;
+}
+
+.reviews .reviews-container .reviews-content .reviews-content-inner .reviews-card .image-container {
+    margin-right: 1rem;
+}
+
+.reviews .reviews-container .reviews-content .reviews-content-inner .reviews-card .card-info .reviews-rating {
+    margin-right: 0.5rem;
+    padding-right: 0.5rem;
+    border-right: 1px solid var(--black-color);
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-semibold);
+    white-space: nowrap;
+}
+
+.reviews .reviews-container .reviews-content .reviews-content-inner .reviews-card .card-info {
+    margin-bottom: 0.5rem;
+}
+
+.reviews .reviews-container .reviews-content .reviews-content-inner .reviews-card .card-info .name {
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-regular);
+    white-space: nowrap;
+}
+
+.reviews .reviews-container .reviews-content .reviews-content-inner .reviews-card .reviews-text {
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-regular);
+}
+
+.reviews .reviews-container .reviews-content .reviews-content-inner .reviews-card .report {
+    margin-left: 1rem;
+}
+
+.reviews .reviews-container .reviews-content .reviews-content-inner .reviews-card .report .button-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--black-color);
+}
+
+.reviews .reviews-container .pagination {
+    margin-top: 1.5rem;
+    gap: 1.5rem;
+}
+
+.reviews .reviews-container .pagination button.right {
+    transform: rotate(180deg);
+}
+
+.reviews .reviews-container .pagination p {
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-regular);
+}
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 450px) {
+    .flight-detail .flight-content {
+        flex-wrap: wrap;
+    }
+
+    .flight-detail .flight-content .flight-content-inner {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+
+    .flight-detail .location-container {
+        margin-bottom: 1rem;
+    }
+
+    .flight-detail .location-container .location {
+        margin-left: 1rem;
+    }
+
+    .panoramic-container {
+        margin-top: 2rem;
+    }
+
+    .complete-info .complete-info-inner .card-container {
+        overflow-x: scroll;
+    }
+
+    .complete-info .complete-info-inner .card-container .info-card {
+        min-width: 14rem;
+    }
+
+    .rooms .rooms-content .rooms-container .rooms-card .rooms-content-inner {
+        flex-wrap: wrap;
+    }
+
+    .rooms .rooms-content .rooms-container .rooms-card .right-info {
+        width: 100%;
+        margin-top: 1rem;
+        display: block;
+    }
+
+    .rooms .rooms-content .rooms-container .rooms-card .right-info .rooms-button {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .rooms .rooms-content .rooms-container .rooms-card .right-info .price {
+        text-align: end;
+    }
+
+    .rooms .rooms-content .rooms-container .rooms-card .right-info .book-button {
+        width: 100%;
+        display: block;
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .maps .maps-content {
+        flex-wrap: wrap;
+    }
+
+    .maps .maps-content .view-button {
+        margin-top: 1rem;
+    }
+
+    .maps .location-container {
+        margin-top: 1rem;
+    }
+
+    .maps .location-container .location {
+        margin-left: 1rem;
+    }
+
+    .reviews .reviews-container .reviews-content .reviews-content-inner .reviews-card .reviews-detail {
+        flex-wrap: wrap;
+    }
+
+    .reviews .reviews-container .reviews-content .reviews-content-inner .reviews-card .card-info {
+        margin-top: 1rem;
+    }
+}

@@ -1,0 +1,428 @@
+@import url(style.css);
+
+/* Style Navbar Section */
+
+.navbar.scroll {
+    background-color: var(--white-color);
+}
+
+.navbar .nav-link {
+    color: var(--black-color) !important;
+}
+
+.navbar .login-button {
+    color: var(--black-color);
+}
+
+.navbar .register-button {
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+
+
+/* Style Breadcrumb Section */
+
+.breadcrumb {
+    margin-top: 6.188rem;
+    margin-bottom: 2rem;
+}
+
+.breadcrumb .breadcrumb-item.active span {
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-medium);
+    opacity: 0.75;
+}
+
+.breadcrumb .breadcrumb-item a {
+    color: var(--secondary-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-medium);
+}
+
+
+
+/* Style Flight Detail Section */
+
+.flight-detail .flight-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flight-detail .plane {
+    margin-bottom: 1rem;
+    color: var(--black-color);
+    font-family: var(--font-trade-gothic);
+    font-size: 1.5rem;
+    font-weight: var(--fw-bold);
+}
+
+.flight-detail .location {
+    margin-bottom: 0.5rem;
+}
+
+.flight-detail .location .button-icon {
+    width: 1.125rem;
+    height: 1.125rem;
+    color: var(--black-color);
+}
+
+.flight-detail .location span {
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-medium);
+    opacity: 0.75;
+}
+
+.flight-detail .rating {
+    margin-right: 0.5rem;
+    padding: 0.531rem 0.688rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 0.25rem;
+}
+
+.flight-detail .review {
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.75rem;
+    font-weight: var(--fw-medium);
+}
+
+.flight-detail .review span {
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.75rem;
+    font-weight: var(--fw-bold);
+}
+
+.flight-detail .price {
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+    font-family: var(--font-poppins);
+    font-size: 2rem;
+    font-weight: var(--fw-bold);
+    text-align: end;
+}
+
+.flight-detail .detail-buttons {
+    gap: 0.938rem;
+}
+
+.flight-detail .favorite-button,
+.flight-detail .share-button,
+.flight-detail .submit-button {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 0.25rem;
+}
+
+.flight-detail .favorite-button .button-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--black-color);
+}
+
+.flight-detail .share-button .button-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--black-color);
+}
+
+.flight-detail .submit-button {
+    background-color: var(--primary-color);
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-semibold);
+}
+
+.flight-detail .plane-image {
+    margin-top: 2rem;
+}
+
+
+
+/* Style Features Section */
+
+.features {
+    margin-top: 2.5rem;
+    margin-bottom: 16.938rem;
+}
+
+.features .features-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.features .title {
+    color: var(--black-color);
+    font-family: var(--font-trade-gothic);
+    font-size: 1.5rem;
+    font-weight: var(--fw-bold);
+}
+
+.features .type {
+    gap: 3rem;
+}
+
+.features .type .form-check-input {
+    margin-right: 0.5rem;
+    border: 2px solid var(--black-color);
+}
+
+.features .type .form-check-input:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.features .type .form-check-label {
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-medium);
+}
+
+.features .features-image {
+    margin-top: 1.5rem;
+}
+
+.features .features-image .image-container {
+    gap: 1.188rem;
+}
+
+.features .info {
+    margin-top: 2.5rem;
+    padding: 1rem;
+    background: rgba(141, 211, 187, 0.6);
+    border-radius: 0.5;
+}
+
+.features .info .info-content {
+    display: flex;
+    align-items: center;
+}
+
+.features .info .title {
+    margin-bottom: 1rem;
+    color: var(--black-color);
+    font-family: var(--font-trade-gothic);
+    font-size: 1.5rem;
+    font-weight: var(--fw-bold);
+}
+
+.features .info .info-text .button-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: var(--black-color);
+}
+
+.features .info .info-text span {
+    display: inline-block;
+    margin-left: 1rem;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 1rem;
+    font-weight: var(--fw-medium);
+}
+
+.features .info .info-text:nth-child(1){
+    margin-right: 1rem;
+}
+
+.features .return-card {
+    margin-top: 2.5rem;
+    padding: 2rem 1.5rem;
+    background-color: var(--white-color);
+    box-shadow: 0 4px 16px rgba(17, 34, 17, 0.05);
+    border-radius: 0.75rem;
+}
+
+.features .card-group:not(:last-child) {
+    margin-bottom: 2.5rem;
+}
+
+.features .return-card .return-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.features .return-card .return-info .date {
+    color: var(--black-color);
+    font-family: var(--font-trade-gothic);
+    font-size: 1.25rem;
+    font-weight: var(--fw-bold);
+}
+
+.features .return-card .return-info .time {
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 1.25rem;
+    font-weight: var(--fw-medium);
+    opacity: 0.75;
+}
+
+.features .return-card .guarantee {
+    margin-bottom: 2.5rem;
+}
+
+.features .return-card .guarantee .flight .flight-image {
+    width: 4rem;
+    height: 2.781rem;
+    margin-right: 1.5rem;
+}
+
+.features .return-card .guarantee .name {
+    margin-bottom: 0.5rem;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 1.5rem;
+    font-weight: var(--fw-semibold);
+}
+
+.features .return-card .guarantee .type {
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-medium);
+    opacity: 0.6;
+}
+
+.features .return-card .guarantee button .button-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: var(--black-color);
+}
+
+.features .return-card .guarantee .divider {
+    width: 3rem;
+    margin: 0 1.5rem;
+    border: 1px solid #D7E2EE;
+    transform: rotate(90deg);
+}
+
+.features .return-card .flight-date .plane {
+    gap: 5rem;
+}
+
+.features .return-card .flight-date .plane .circle {
+    position: relative;
+    width: 0.4rem;
+    height: 0.4rem;
+    background-color: var(--black-color);
+    border-radius: 50%;
+}
+
+.features .return-card .flight-date .plane .circle.right .line {
+    position: absolute;
+    top: 0.15rem;
+    left: 0;
+    width: 3.5rem;
+    height: 0.1rem;
+    background-color: var(--black-color);
+    border-radius: 0.25rem;
+}
+
+.features .return-card .flight-date .plane .circle.left .line {
+    position: absolute;
+    top: 0.15rem;
+    right: 0;
+    width: 3.5rem;
+    height: 0.1rem;
+    background-color: var(--black-color);
+    border-radius: 0.25rem;
+}
+
+.features .return-card .flight-date .plane .button-icon {
+    width: 3rem;
+    height: 3rem;
+    color: var(--black-color);
+}
+
+.features .return-card .flight-date .departure,
+.features .return-card .flight-date .arrive {
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 1.5rem;
+    font-weight: var(--fw-semibold);
+}
+
+.features .return-card .flight-date .departure span,
+.features .return-card .flight-date .arrive span {
+    display: inline-block;
+    margin-left: 1rem;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 1rem;
+    font-weight: var(--fw-medium);
+    opacity: 0.6;
+}
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 450px) {
+    .flight-detail .flight-content {
+        flex-wrap: wrap;
+    }
+
+    .flight-detail .location {
+        margin-bottom: 1rem;
+    }
+    
+    .flight-detail .flight-content .flight-info {
+        margin-top: 1rem;
+        margin-left: auto;
+    }
+
+    .features .features-content {
+        flex-wrap: wrap;
+    }
+
+    .features .type {
+        margin-top: 1rem;
+        padding-left: 2rem;
+        overflow-x: scroll;
+    }
+
+    .features .type .form-check-label {
+        white-space: nowrap;
+    }
+
+    .features .features-image {
+        overflow-x: scroll;
+    }
+
+    .features .info .info-content {
+        flex-wrap: wrap;
+    }
+
+    .features .return-card {
+        white-space: nowrap;
+        overflow-x: scroll;
+    }
+
+    .features .return-card .return-info {
+        flex-wrap: wrap;
+    }
+
+    .features .return-card .guarantee .type {
+        padding-left: 0;
+    }
+
+    .features .return-card .guarantee {
+        gap: 10rem;
+    }
+
+    .features .return-card .flight-date {
+        gap: 5rem;
+    }
+}

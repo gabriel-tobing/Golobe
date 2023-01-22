@@ -1,0 +1,572 @@
+@import url(style.css);
+
+/* Style Navbar Section */
+
+.navbar {
+    background-color: var(--white-color);
+}
+
+.navbar.scroll {
+    background-color: var(--white-color);
+    box-shadow: 0 0.125rem 0.25rem rgba(17, 34, 17, 0.075);
+}
+
+.navbar .nav-link {
+    color: var(--black-color) !important;
+}
+
+.navbar .login-button {
+    color: var(--black-color);
+}
+
+.navbar .register-button {
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+
+
+/* Style Hero Section */
+
+.hero {
+    position: relative;
+    height: 65vh;
+    background: linear-gradient(90deg, rgba(0, 35, 77, 0.63) 11.46%, rgba(0, 35, 77, 0) 77.37%), url(../../images/static/Flight/Hero-image.jpg);
+    background-size: cover;
+    background-position: 0 1rem;
+    background-repeat: no-repeat;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--black-color);
+    opacity: 0.6;
+}
+
+.hero .hero-content {
+    margin-top: 9rem;
+}
+
+.hero .hero-content .subtitle {
+    width: 40%;
+    color: var(--white-color);
+    font-family: var(--font-trade-gothic);
+    font-size: 2.813rem;
+    font-weight: var(--fw-bold);
+}
+
+.hero .hero-content .desc {
+    color: var(--white-color);
+    font-family: var(--font-trade-gothic);
+    font-size: 1.25rem;
+    font-weight: var(--fw-semibold);
+}
+
+.search {
+    margin-top: -2rem;
+}
+
+.search .card {
+    padding: 1rem 2rem 2rem 2rem;
+    background-color: var(--white-color);
+    box-shadow: 0 0.25rem 1rem rgba(141, 211, 187, 0.15);
+    font-family: var(--font-poppins);
+}
+
+.search .card .title {
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 1.25rem;
+    font-weight: var(--fw-semibold);
+}
+
+.search .card .type-button {
+    display: inline-block;
+    padding: 0.75rem 0.6rem 0.75rem 0;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 1rem;
+    font-weight: var(--fw-semibold);
+}
+
+.search .card .type-button span {
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+
+.search .card .divider {
+    width: 48px;
+    height: 100%;
+    margin: 2rem;
+    border: 1px solid #D7E2EE;
+    transform: rotate(90deg);
+}
+
+.search .card .type-button.active {
+    border-bottom: 4px solid var(--primary-color);
+}
+
+.search .card .search-form {
+    margin-top: 2rem;
+}
+
+.search .card .search-form .form-buttons {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    gap: 1.5rem;
+}
+
+.search .card .search-form .search-container {
+    margin-bottom: 2rem;
+    gap: 1.5rem;
+}
+
+.search .card form .form-content {
+    position: relative;
+}
+
+.search .card .form-content .form-label {
+    position: absolute;
+    top: -0.6rem;
+    left: 0.8rem;
+    padding: 0 0.25rem;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-regular);
+    z-index: 3;
+}
+
+.search .card .form-content .form-control {
+    padding: 0.8rem 2.3rem 0.8rem 1rem;
+    border: 2px solid var(--black-color);
+    background-color: var(--white-color);
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-weight: var(--fw-regular);
+}
+
+.search .card .form-content .form-control:focus .form-label {
+    color: var(--primary-color);
+}
+
+.search .card form .swap,
+.search .card form .chevron {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 0.25rem 0.25rem 0;
+}
+
+.search .card form .form-control.trip {
+    width: 8rem;
+    padding-right: 3rem;
+}
+
+.search .card form .promo-button {
+    display: inline-block;
+    padding: 0.5rem 0;
+}
+
+.search .card form .submit-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    border-radius: 0.25rem;
+    text-align: center;
+}
+
+.search .card form .promo-button .button-icon,
+.search .card form .submit-button .button-icon {
+    width: 1rem;
+    height: 1rem;
+    color: var(--black-color);
+}
+
+.search .card form .promo-button span,
+.search .card form .submit-button span {
+    display: inline-block;
+    margin-left: 0.313rem;
+    color: var(--black-color);
+    font-size: 0.875rem;
+    font-weight: var(--fw-medium);
+}
+
+
+
+/* Style Discover Section */
+
+.discover {
+    padding: 5rem 1rem 1rem 1rem;
+}
+
+.discover .discover-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.discover .title {
+    margin-bottom: 1rem;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 2rem;
+    font-weight: var(--fw-semibold);
+}
+
+.discover .desc {
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-weight: var(--fw-regular);
+}
+
+.discover .more-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 0.25rem;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-medium);
+}
+
+
+
+/* Style Travel Section */
+
+.travel {
+    padding: 5rem 1rem 1rem 1rem;
+}
+
+.travel .travel-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+.travel .title {
+    margin-bottom: 1rem;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 2rem;
+    font-weight: var(--fw-semibold);
+}
+
+.travel .desc {
+    width: 80%;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-weight: var(--fw-regular);
+}
+
+.travel .more-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 0.25rem;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-medium);
+}
+
+.travel .travel-card {
+    height: 34.938rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+}
+
+.travel .travel-card.melbourne {
+    background-image: url(../../images/static/Flight/Melbourne.png);
+}
+
+.travel .travel-card.paris {
+    background-image: url(../../images/static/Flight/Paris.png);
+}
+
+.travel .travel-card.london {
+    background-image: url(../../images/static/Flight/London.png);
+}
+
+.travel .travel-card.columbia {
+    background-image: url(../../images/static/Flight/Columbia.png);
+}
+
+.travel .travel-card .title {
+    margin-bottom: 0.5rem;
+    color: var(--white-color);
+    font-family: var(--font-poppins);
+    font-size: 1.5rem;
+    font-weight: var(--fw-bold);
+}
+
+.travel .travel-card .desc {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: var(--white-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-regular);
+}
+
+.travel .travel-card .price {
+    color: var(--white-color);
+    font-family: var(--font-poppins);
+    font-size: 1.5rem;
+    font-weight: var(--fw-semibold);
+}
+
+.travel .travel-card .submit-button {
+    padding: 0.969rem 1rem;
+    background-color: var(--primary-color);
+    border-radius: 0.25rem;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-medium);
+}
+
+
+
+/* Style Destination Section */
+
+.destination {
+    padding: 5rem 1rem 1rem 1rem;
+    margin-bottom: 16.938rem;
+}
+
+.destination .destination-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+.destination .title {
+    margin-bottom: 1rem;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 2rem;
+    font-weight: var(--fw-semibold);
+}
+
+.destination .desc {
+    margin-bottom: 1rem;
+    width: 80%;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-weight: var(--fw-regular);
+}
+
+.destination .more-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 0.25rem;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-medium);
+}
+
+.destination .recomended {
+    height: 100% !important;
+    background-color: var(--primary-color);
+    border-radius: 1.25rem;
+}
+
+.destination .recomended .recomended-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.destination .recomended .title {
+    width: 70%;
+    color: var(--black-color);
+    font-family: var(--font-trade-gothic);
+    font-size: 2.5rem;
+    font-weight: var(--fw-bold);
+    line-height: 3.188rem;
+}
+
+.destination .recomended .info {
+    height: 100%;
+    padding: 0.5rem;
+    background-color: var(--white-color);
+    border-radius: 0.5rem;
+}
+
+.destination .recomended .info .type {
+    margin-bottom: 0.25rem;
+    color: var(--black-color);
+    font-family: var(--font-trade-gothic);
+    font-size: 0.875rem;
+    font-weight: var(--fw-regular);
+}
+
+.destination .recomended .info .price {
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 1.25rem;
+    font-weight: var(--fw-semibold);
+}
+
+.destination .recomended .desc {
+    width: 100%;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-regular);
+}
+
+.destination .recomended .submit-button {
+    padding: 0.969rem 1rem;
+    background-color: var(--white-color);
+    border-radius: 0.25rem;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-medium);
+}
+
+.destination .panoramic {
+    height: 12.5rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 0.75rem;
+}
+
+.destination .panoramic.one {
+    background-image: url(../../images/static/Flight/Panoramic-1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.destination .panoramic.two {
+    background-image: url(../../images/static/Flight/Panoramic-2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.destination .panoramic.three {
+    background-image: url(../../images/static/Flight/Panoramic-3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.destination .panoramic.four {
+    background-image: url(../../images/static/Flight/Panoramic-4.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 450px) {
+    .hero {
+        height: 100%;
+    }
+
+    .hero .hero-content {
+        margin-top: 6rem;
+    }
+    
+    .hero .hero-content .subtitle {
+        width: 100%;
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+    
+    .hero .hero-content .desc {
+        font-size: 1rem;
+    }
+
+    .search {
+        margin-top: -0.5rem;
+    }
+
+    .search .card form .form-control.trip {
+        width: 100%;
+    }
+
+    .search .card .search-form .form-buttons {
+        display: flex;
+        justify-content: end;
+        align-items: flex-end;
+        gap: 1.5rem;
+    }
+
+    .search .card .search-form .form-buttons {
+        display: block;
+    }
+
+    .search .card .search-form .form-buttons .promo-button {
+        margin-bottom: 1rem;
+    }
+
+    .search .card .search-form .form-buttons .promo-button,
+    .search .card .search-form .form-buttons .submit-button {
+        width: 100%;
+        display: block;
+    }
+
+    .discover .discover-content {
+        flex-wrap: wrap;
+    }
+
+    .travel .travel-content {
+        flex-wrap: wrap;
+    }
+
+    .travel .desc {
+        width: 100%;
+    }
+
+    .destination .destination-content {
+        flex-wrap: wrap;
+    }
+
+    .destination .desc {
+        width: 100%;
+    }
+
+    .destination .recomended {
+        height: 100% !important;
+    }
+
+    .destination .recomended .recomended-content {
+        flex-wrap: wrap;
+    }
+
+    .destination .recomended .title {
+        width: 100%;
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .destination .recomended .info {
+        margin-top: 1rem;
+    }
+
+    .destination .panoramic-container {
+        margin-top: 2rem;
+    }
+}

@@ -1,0 +1,290 @@
+/* Variable CSS */
+
+:root {
+    /* Colors */
+    --primary-color: #8DD3BB;
+    --secondary-color: #FF8682;
+    --white-color: #FFFFFF;
+    --black-color: #112211;
+
+    /* Typography */
+    --font-poppins: "Poppins", sans-serif;
+    --font-trade-gothic: "Trade Gothic LT Std", sans-serif;
+
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+}
+
+
+
+/* Reset CSS and Style Base */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 1rem;
+}
+
+body {
+    background-color: var(--white-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+
+
+/* Reuseable Class */
+
+.form-control:focus {
+    background-color: var(--white-color);
+    border-color: var(--primary-color) !important;
+    box-shadow: none;
+}
+
+.form-select:focus {
+    background-color: var(--white-color);
+    box-shadow: none;
+}
+
+
+
+/* Style Navbar Section */
+
+.navbar {
+    background: transparent;
+    transition: 0.3s;
+}
+
+.navbar.scroll {
+    background-color: var(--white-color);
+    box-shadow: 0 0.125rem 0.25rem rgba(17, 34, 17, 0.075);
+}
+
+.navbar.scroll .navbar-icon {
+    color: var(--black-color);
+}
+
+.navbar.scroll .nav-link {
+    color: var(--black-color) !important;
+}
+
+.navbar .navbar-brand {
+    display: none;
+}
+
+.navbar .navbar-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: var(--white-color);
+}
+
+.navbar .nav-link {
+    display: inline-block;
+    margin-left: 0.3rem;
+    color: var(--white-color) !important;
+    font-family: var(--font-poppins);
+    font-weight: var(--fw-semibold);
+    font-size: 0.875em;
+}
+
+.navbar .navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navbar .nav-item.active {
+    border-bottom: 4px solid var(--primary-color);
+}
+
+.navbar .nav-buttons {
+    gap: 2rem;
+}
+
+.navbar .login-button {
+    display: inline-block;
+    color: var(--white-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-semibold);
+}
+
+.navbar.scroll .login-button {
+    color: var(--black-color);
+}
+
+.navbar .register-button {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background-color: var(--white-color);
+    border-radius: 0.5rem;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-semibold);
+}
+
+.navbar.scroll .register-button {
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+
+
+/* Style Footer Section */
+
+.footer {
+    background-color: var(--primary-color);
+}
+
+.footer .newsletter {
+    margin-top: -10rem;
+    padding: 0 1.5rem;
+    background-color: #CDEAE1;
+    border-radius: 1.25rem;
+    box-shadow: 0 0.25 1rem rgba(17, 34, 17, 0.05);
+}
+
+.footer .newsletter .title {
+    width: 50%;
+    margin-bottom: 1.5rem;
+    color: var(--black-color);
+    font-family: var(--font-trade-gothic);
+    font-size: 2.75rem;
+    font-weight: var(--fw-bold);
+    line-height: 3.375rem;
+}
+
+.footer .newsletter span {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    color: var(--black-color);
+    font-family: var(--font-trade-gothic);
+    font-size: 1.25rem;
+    font-weight: var(--fw-bold);
+}
+
+.footer .newsletter .desc {
+    margin-bottom: 1rem;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-weight: var(--fw-medium);
+    opacity: 0.7;
+}
+
+.footer .newsletter .form-content .form-control {
+    background-color: var(--white-color);
+    color: var(--white-color);
+}
+
+.footer .newsletter .form-content .submit-button {
+    display: inline-block;
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--black-color);
+    border-radius: 0.25rem;
+    color: var(--white-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-semibold);
+}
+
+.footer .footer-content {
+    margin-top: 4rem;
+    padding: 2rem 6.5rem 0 6.5rem;
+}
+
+.footer .footer-content .social-media {
+    margin-top: 1.5rem;
+    gap: 0.75rem;
+}
+
+.footer .footer-content .footer-title {
+    margin-bottom: 1rem;
+    color: var(--black-color);
+    font-family: var(--font-trade-gothic);
+    font-size: 1rem;
+    font-weight: var(--fw-bold);
+}
+
+.footer .footer-content .footer-link {
+    display: inline-block;
+    margin-bottom: 0.75rem;
+    color: var(--black-color);
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: var(--fw-medium);
+}
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 450px) {
+    .navbar .navbar-nav {
+        margin-top: 1rem;
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .navbar .navbar-brand {
+        display: block;
+    }
+
+    .navbar .logo {
+        display: none;
+    }
+
+    .navbar .nav-buttons {
+        margin-top: 1rem;
+    }
+
+    .footer .newsletter {
+        padding: 0;
+    }
+
+    .footer .newsletter img {
+        display: none;
+    }
+
+    .footer .newsletter .title {
+        width: 100%;
+        font-size: 1.75rem;
+        line-height: 1.3;
+    }
+
+    .footer .newsletter .form-content {
+        flex-wrap: wrap;
+    }
+
+    .footer .newsletter .form-content .form-control {
+        width: 100%;
+    }
+    
+    .footer .newsletter .form-content .submit-button {
+        width: 100%;
+        display: block;
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+
+    .footer .footer-content {
+        padding: 0;
+    }
+}
